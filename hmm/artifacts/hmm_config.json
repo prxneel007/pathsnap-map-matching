@@ -1,0 +1,8 @@
+{
+  "beta": 5.0,
+  "emit_w": 0.5,
+  "min_prob": 0.0001,
+  "back_tol_m": 15.0,
+  "gap_split_s": 60.0,
+  "tuned_on": "train out-of-fold probabilities (GroupKFold 5)"
+}

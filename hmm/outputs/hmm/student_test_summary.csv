@@ -1,0 +1,5 @@
+,classifier only,classifier + HMM
+point Top-1 accuracy,0.882036272408927,0.9360267600480845
+route arc F1 (mean per trip),0.9057921403363833,0.9621912973308543
+route continuity,0.9498668337772207,0.9817745051960938
+chain breaks,,6.0
