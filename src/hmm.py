@@ -83,6 +83,8 @@ def decode(p, c, prob, beta=BETA, emit_w=EMIT_W, graph=None):
                         dr = (FB[ib] - FA[ia]) * L[a]
                         if dr < -BACK_TOL:
                             continue
+                        # abs, not signed: a signed penalty scored worse on train OOF (91.4% vs 92.2%) because ~3% of
+                        # reference labels point against the GPS travel direction (see 05_hmm.ipynb, section 5)
                         dr = abs(dr)
                     else:
                         sp = reach.get(int(u[b]))
