@@ -1,0 +1,12 @@
+,total_student_test,total_train,trips_affected
+track_nan,0,0,0
+invalid_coord,0,0,0
+t_non_increasing,0,0,0
+arc_bad_node_ref,0,0,0
+route_bad_ids,0,0,0
+self_loops,2,22,9
+dup_arcs,128,1775,60
+zero_len_arcs,6,100,32
+stationary_steps,0,6,5
+n_jumps_gt200kmh,4,917,23
+isolated_nodes,0,0,0
