@@ -1,0 +1,17 @@
+model,family,max_fit_rows,config
+LogisticRegression,Linear,,"Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('logisticregression', LogisticRegression(max_iter=500))])"
+GaussianNB,Probabilistic,,GaussianNB()
+KNN,Instance-based,60000.0,"Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('kneighborsclassifier',
+                 KNeighborsClassifier(n_jobs=-1, n_neighbors=25,
+                                      weights='distance'))])"
+RandomForest,Ensemble (bagging),,"RandomForestClassifier(max_depth=18, max_samples=0.3, min_samples_leaf=10,
+                       n_estimators=150, n_jobs=-1, random_state=42)"
+LightGBM,Boosting,,"LGBMClassifier(learning_rate=0.05, n_estimators=300, num_leaves=63,
+               random_state=42, verbose=-1)"
+MLP,Neural network,300000.0,"Pipeline(steps=[('standardscaler', StandardScaler()),
+                ('mlpclassifier',
+                 MLPClassifier(batch_size=1024, early_stopping=True,
+                               hidden_layer_sizes=(64, 32), max_iter=25,
+                               n_iter_no_change=4, random_state=42))])"

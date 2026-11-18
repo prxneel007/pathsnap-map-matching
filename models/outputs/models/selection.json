@@ -1,0 +1,4 @@
+{
+  "selected_model": "LightGBM",
+  "rule": "highest CV point-level Top-1 accuracy; tie-break lower CV log loss"
+}
